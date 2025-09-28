@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-fastify-otel-improved",
+  "version": "0.1.0",
+  "description": "Fastify app with improved OpenTelemetry metrics and traces (copied to tmp)",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "start:dev": "node src/server.js"
+  },
+  "dependencies": {
+    "@fastify/otel": "^0.9.4",
+    "@opentelemetry/api": "latest",
+    "@opentelemetry/auto-instrumentations-node": "latest",
+    "@opentelemetry/exporter-metrics-otlp-http": "^0.205.0",
+    "@opentelemetry/exporter-prometheus": "latest",
+    "@opentelemetry/exporter-trace-otlp-http": "latest",
+    "@opentelemetry/instrumentation-express": "^0.54.0",
+    "@opentelemetry/instrumentation-fs": "^0.25.0",
+    "@opentelemetry/instrumentation-pino": "latest",
+    "@opentelemetry/sdk-metrics": "^2.1.0",
+    "@opentelemetry/sdk-node": "^0.205.0",
+    "dotenv": "^16.1.4",
+    "fastify": "^4.22.0"
+  }
+}
